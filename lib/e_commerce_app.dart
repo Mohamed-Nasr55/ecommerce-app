@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/features/auth/ui/screens/Login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,12 +13,13 @@ class ECommerceApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
-        return  MaterialApp(
+        return MaterialApp(
+          home: LoginScreen(),
           debugShowCheckedModeBanner: false,
           title: 'E-Commerce App',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          ),
+          // theme: ThemeData(
+          //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          // ),
         );
       },
     );
