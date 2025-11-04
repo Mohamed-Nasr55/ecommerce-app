@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/core/helpers/extensions.dart';
 import 'package:ecommerceapp/core/theme/app_colors.dart';
 import 'package:ecommerceapp/core/theme/app_text_style.dart';
 import 'package:flutter/material.dart';
@@ -26,9 +27,7 @@ class AppButton extends StatelessWidget {
         onPressed: onpressed,
         style: TextButton.styleFrom(
           backgroundColor: AppColors.primaryColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12.0.r),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: 10.radius),
         ),
         child: Text(text, style: AppTextStyle.font16700),
       ),

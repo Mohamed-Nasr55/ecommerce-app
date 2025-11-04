@@ -5,3 +5,7 @@ extension SizedBoxExtension on num {
   SizedBox get height => SizedBox(height: toDouble().h);
   SizedBox get width => SizedBox(height: toDouble().w);
 }
+
+extension BorderRadiusExtension on num {
+  BorderRadius get radius => BorderRadius.circular(toDouble().r);
+}

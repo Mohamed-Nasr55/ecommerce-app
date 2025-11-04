@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/core/helpers/extensions.dart';
 import 'package:ecommerceapp/core/theme/app_colors.dart';
 import 'package:ecommerceapp/core/theme/app_text_style.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class CustomTextFormfeild extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: AppColors.whiteColor,
-        borderRadius: BorderRadius.circular(10.0.r),
+        borderRadius: 10.radius,
         boxShadow: [
           BoxShadow(
             color: AppColors.greyColor.withValues(alpha: 0.1),
@@ -41,7 +42,7 @@ class CustomTextFormfeild extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.whiteColor,
-          borderRadius: BorderRadius.circular(12.0.r),
+          borderRadius: 12.radius,
           boxShadow: [
             BoxShadow(
               color: AppColors.greyColor.withValues(alpha: 0.1),
@@ -66,15 +67,15 @@ class CustomTextFormfeild extends StatelessWidget {
             filled: true,
             fillColor: AppColors.whiteColor,
             enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0.r),
+              borderRadius: 10.radius,
               borderSide: BorderSide(color: AppColors.greyColor),
             ),
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0.r),
+              borderRadius: 10.radius,
               borderSide: BorderSide(color: AppColors.greyColor),
             ),
             errorBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(10.0.r),
+              borderRadius: 10.radius,
               borderSide: BorderSide(color: Colors.red),
             ),
           ),
