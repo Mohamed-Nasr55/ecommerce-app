@@ -10,6 +10,8 @@ class CustomTextFormfeild extends StatelessWidget {
   final String? labelText;
   final String? hintText;
   final String? Function(String?)? validator;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
   const CustomTextFormfeild({
     super.key,
     required this.controller,
@@ -18,6 +20,8 @@ class CustomTextFormfeild extends StatelessWidget {
     this.labelText,
     this.hintText,
     this.validator,
+    this.prefixIcon,
+    this.suffixIcon,
   });
 
   @override
@@ -57,6 +61,8 @@ class CustomTextFormfeild extends StatelessWidget {
             hintText: hintText,
             hintStyle: AppTextStyle.font13w500,
             labelStyle: AppTextStyle.font13w500,
+            prefixIcon: prefixIcon,
+            suffixIcon: suffixIcon,
             filled: true,
             fillColor: AppColors.whiteColor,
             enabledBorder: OutlineInputBorder(

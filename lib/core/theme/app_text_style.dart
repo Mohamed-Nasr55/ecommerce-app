@@ -24,9 +24,9 @@ abstract class AppTextStyle {
     color: AppColors.blackColor,
   );
   static TextStyle font16700 = TextStyle(
-    fontSize: 15.0.sp,
+    fontSize: 16.0.sp,
     fontWeight: FontWeight.w700,
-    color: AppColors.blackColor,
+    color: AppColors.whiteColor,
   );
   static TextStyle font20w700 = TextStyle(
     fontSize: 20.0.sp,

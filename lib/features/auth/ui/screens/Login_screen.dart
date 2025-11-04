@@ -1,6 +1,7 @@
 import 'package:ecommerceapp/core/helpers/extensions.dart';
 import 'package:ecommerceapp/core/theme/app_colors.dart';
 import 'package:ecommerceapp/core/theme/app_text_style.dart';
+import 'package:ecommerceapp/features/auth/ui/widgets/app_button.dart';
 import 'package:ecommerceapp/features/auth/ui/widgets/custom_text_formfeild.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,10 @@ class _LoginScreenState extends State<LoginScreen> {
         body: SafeArea(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 27,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -51,6 +55,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: _phoneController,
                     hintText: "(+20) ___________",
                   ),
+                  100.height,
+                  AppButton(text: "Login"),
                 ],
               ),
             ),
