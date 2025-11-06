@@ -13,9 +13,7 @@ class OtpScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-          child: Text("OTP Verification", style: AppTextStyle.font20w700),
-        ),
+        title: Text("OTP Verification", style: AppTextStyle.font20w700),
         actions: [],
       ),
 

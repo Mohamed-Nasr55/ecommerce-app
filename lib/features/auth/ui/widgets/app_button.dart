@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:ecommerceapp/core/helpers/extensions.dart';
 import 'package:ecommerceapp/core/theme/app_colors.dart';
 import 'package:ecommerceapp/core/theme/app_text_style.dart';
@@ -29,7 +30,7 @@ class AppButton extends StatelessWidget {
           backgroundColor: AppColors.primaryColor,
           shape: RoundedRectangleBorder(borderRadius: 10.radius),
         ),
-        child: Text(text, style: AppTextStyle.font16700white),
+        child: Text(text.tr(), style: AppTextStyle.font16700white),
       ),
     );
   }
